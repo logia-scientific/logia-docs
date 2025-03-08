@@ -1,1 +1,1 @@
-Website and documentation wikis for Logia.
+Website and documentation for Logia.
