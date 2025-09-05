@@ -127,10 +127,6 @@ if __name__ == '__main__':
 This starts the Qt application.
 
 ---
-Perfeito 👍
-Aqui está a versão do manual agora **traduzida para inglês**.
-
----
 
 # 📘 User Manual – Logia Scientific Software
 
