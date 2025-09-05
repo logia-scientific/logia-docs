@@ -127,21 +127,132 @@ if __name__ == '__main__':
 This starts the Qt application.
 
 ---
-
-## 🔹 Example of use
-
-1. Open the program.
-2. Write in a box: `sin(x)`.
-3. Add another: `x**2 + 5`.
-4. Set Xmin=-5, Xmax=5.
-5. Click "Generate Plot from Functions".
-6. The graph appears with both functions.
+Perfeito 👍
+Aqui está a versão do manual agora **traduzida para inglês**.
 
 ---
 
-👉 In summary:
-This script is an **interactive tool for drawing customized scientific plots**.
-It’s like a mini version of MATLAB/Mathematica made in Python, with full control over style and mathematics.
+# 📘 User Manual – Logia Scientific Software
+
+## 🖥️ Introduction
+
+**Logia Scientific Software** is a Python application (PyQt5 + Matplotlib) that allows you to **define mathematical functions and visualize their plots** interactively.
+
+It works like a lightweight scientific visualization tool, similar to MATLAB or Mathematica.
 
 ---
 
+## 🚀 How to Start
+
+1. Make sure you have Python 3 installed on Windows, Linux, or Mac.
+2. Install the required libraries:
+
+   ```bash
+   pip install pyqt5 matplotlib numpy
+   ```
+3. Run the program:
+
+   ```bash
+   python logia.py
+   ```
+4. The application will open with:
+
+   * A **control panel** on the left.
+   * A **plotting area** on the right.
+
+---
+
+## ✍️ Entering Functions
+
+* Each function must be written in a **text field** on the left panel.
+* Examples:
+
+  * `sin(x)` → sine of x
+  * `x**2 + 5*x` → quadratic polynomial
+  * `pi * cos(x)` → cosine multiplied by pi
+* Use **Python + NumPy expressions** (`sin`, `cos`, `exp`, `log`, etc.).
+* You can add multiple functions:
+
+  * Click **“Add Function”**.
+  * To remove one, click the **X button** next to it.
+
+---
+
+## 📊 Plot Controls
+
+The left panel contains multiple sections for customization.
+
+### 🔹 Axis Ranges
+
+* **X-min, X-max, Y-min, Y-max** → define axis limits.
+* Invalid values (Xmin ≥ Xmax) will trigger an error message.
+
+### 🔹 Display Options
+
+* **Show Major Grid** → toggle major grid lines.
+* **Show Minor Grid** → toggle minor grid lines.
+* **Show Legend** → display legend with function formulas.
+* **Auto Layout Adjust** → automatically adjust plot margins.
+
+### 🔹 Curve Customization
+
+* **Line Style** → solid, dashed, dotted, etc.
+* **Line Width** → thickness of the curve.
+* **Marker Style** → markers (circle, star, cross, etc.).
+* **Marker Size** → size of markers.
+
+### 🔹 Axis Scaling
+
+* **X-axis Scale** → Linear or Logarithmic.
+* **Y-axis Scale** → Linear or Logarithmic.
+  ⚠️ Logarithmic scales only accept positive values.
+
+---
+
+## 🛠️ Main Actions
+
+* **Add Function** → add a new function input field.
+* **Generate Plot** → draw or update the plot with defined functions.
+* **X (next to each function)** → remove that function input.
+
+---
+
+## 🎨 Plot Area
+
+* Located on the right side of the window.
+* Displays all defined functions.
+* Includes Matplotlib toolbar for:
+
+  * **Zooming**,
+  * **Panning**,
+  * **Saving the plot** as a PNG image.
+
+---
+
+## ⚠️ Error Messages
+
+* **“Error: Invalid Axis Range!”** → when Xmin ≥ Xmax or Ymin ≥ Ymax.
+* **“Error: Log Scale requires positive values!”** → when using log scale with values ≤ 0.
+* **“Function Syntax Error”** (in console) → when a function is incorrectly written.
+
+---
+
+## ✅ Practical Example
+
+1. In the first input box, type: `sin(x)`
+2. Click **Add Function** and type: `x**2`
+3. Set axis ranges:
+
+   * X-min = -5, X-max = 5
+   * Y-min = -10, Y-max = 10
+4. Click **Generate Plot**.
+5. The plot will show both functions: sine and quadratic.
+
+---
+
+## 🔚 Closing
+
+* Simply close the window (the program will exit automatically).
+* You can export plots via the Matplotlib toolbar button.
+
+---
